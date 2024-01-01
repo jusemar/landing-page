@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Página de Venda</title>
+	<link rel="stylesheet" href="style.css"> </link>
+	<link rel="stylesheet" href="estiloContagem.css"></link>
+
+<body>
+	<!--bloqueio-->
+	<div id="overlay"></div>
+
+	<div id="container">
+		<div id="page-title">
+			<h2>ESPERE!✋ASSISTA ATÉ O FINAL, VALE A PENA...</h2>						
+		</div>
+		<div id="titulo2">
+			<h1><span>Parabéns!</span> Você deu o primeiro passo.</h1>
+			<h1>Caso não assista o vídeo abaixo,</h1>
+			<h1>você vai perder dinheiro.</h1>	
+		</div>
+		<!-- Seção 1: Video -->
+		<section id="secaoVideo">
+			<video id="videoPrincipal"width="780" height="480" controls>
+				<source src="videos/ofertaColchao.mp4" type="video/mp4">				
+			</video>	
+
+		</section>	
+
+			<h3>CORRA, O TEMPO DESSA PROMOÇÃO VAI ACABAR  </h3>
+		
+		<section>
+		<div class="button-container">
+			<a href="https://moveisacacia.com.br/" class="blinking-button">
+CLIQUE AQUI </a>
+		</div>	
+		</section>		
+			 <section>
+			 <div class="contagem">
+				<div class="numero-container">
+				  <div class="numero" id="dia"></div>
+				  <p class="legenda">Dias</p>
+				</div>  
+					<div class="numero-container">
+					  <div class="numero" id="hora"></div>
+					  <p class="legenda">Horas</p>
+					</div>
+					<div class="dois-pontos">:</div>
+					<div class="numero-container">
+					  <div class="numero" id="minuto"></div>
+					  <p class="legenda">Minutos</p>
+					</div>  
+					<div class="dois-pontos">:</div>
+					<div class="numero-container">
+				<div class="numero-container">
+				  <div class="numero" id="segundo"></div>
+				  <p class="legenda">Segundos</p>
+				</div>
+			  </div>
+			</section>			 			 
+
+	<!--	<section id="secao_Upsell">				
+				<h5>[ AQUI VAI O HTML DO UPSELL ]</h5>
+		</section>-->
+		<div id="up-sell">					
+		  <h2 class="faq-heading">Dúvidas ou perguntas frequentes.</h2>
+		</div>
+		  <section class="containerPerguntas">			
+		<div class="tamanhoDivPerguntas">		
+			<details>
+				<summary>Qual tempo de entrega?</summary>
+				<p>"Nossos colchões são fabricados sob encomenda, assim que recebemos o seu pedido.<br> 
+					Devido a esse processo, solicitamos um prazo de entrega de 25 dias úteis. 
+					Como forma de agradecimento pela espera, oferecemos um desconto especial de R$ 50,00
+					 para você." 
+				</p>
+			</details>
+			<details>
+				<summary>Há um desconto para pagamento antecipado?</summary>
+				<p>Sim, oferecemos um desconto especial de R$ 150,00 para pagamentos antecipados. <br>
+				Essa vantagem decorre do fato de termos mais poder de capital para negociar
+			 diretamente com a fábrica.<br>
+			 Sendo assim, podemos assegurar uma melhor posição em 
+			  nossas negociações, o que nos permite repassar esse desconto diretamente a você.<br>
+			  Desconto válido apenas para produtos acima de R$ 1.000,00 em PIX.
+			</p>				
+			</details>	
+			<details>
+				<summary>O Colchão é vendido com nota fiscal?</summary>
+				<p>Sim, todos os colchões são vendidos acompanhados de nota fiscal 
+					para garantir a transparência e segurança da sua compra.</p>
+			</details>	
+			<details>			
+				<summary>Quais são as opções de pagamento disponíveis?</summary>
+				<p>Oferecemos duas opções de pagamento:<br>
+				1) no ato da entrega, aceitamos pagamento em dinheiro ou Pix. <br>
+				2) Para pagamentos parcelados, oferecemos a plataforma do Mercado Pago.<br>
+				É importante ressaltar que, para pagamentos parcelados, as taxas de parcelamento
+				 devem ser acrescentadas ao valor total da compra, ficando a cargo do cliente. <br>
+				 É importante ressaltar que o desconto de R$ 150,00 não se aplica a pagamentos no ato da entrega.
+			   </p>
+			</details>	
+		</div>		
+		</section>
+
+		<section id="secao_Ol">							
+			
+			<div id="up-sell">
+				<h2 class="deveComprar">Por que você deve comprar conosco?</h2>
+			</div>
+			<div id="div_ol">				
+			  <ol>
+				<li>Porque é uma decisão inteligente para quem busca qualidade com um preço imbatível </li>
+				<li>Também porque oferecemos a segurança de pagamento no ato da entrega. Você tranquilo. </li>
+				<li>Porque esforçamos para que fique satisfeito e assim você volte sempre.</li>	
+				
+			  </ol>			
+			</div>				
+		</section>				  
+		<!-- Seção 2: Texto -->
+		<section id="secaoDepoimento">	
+			<div class="tituloDepoimento">
+				<h2>O que dizem alguns de nossos clientes</h2>	
+			<div>		
+			<div class="videoDepoimento">			
+				<video id="video" width="260" height="240" controls>				
+					<source src="videos/cliente1.mp4" type="video/mp4">
+				</video>
+				<video id="video" width="300" height="240" controls>								 
+					<source src="videos/cliente2.mp4" type="video/mp4">	
+				</video>
+				<video id="video" width="300" height="240" controls>							  
+					<source src="videos/cliente3.mp4" type="video/mp4">
+				</video>
+				<video id="video" width="300" height="240" controls>				
+					<source src="videos/cliente4.mp4" type="video/mp4">					
+				</video>
+			</div>
+		</section>
+		<!-- Seção 3: Componente JavaScript -->
+		<section id="section-3">
+			<div id="mensagemFinal">			
+				<h2>Não deixe essa oportunidade passar</h2>
+				<h3>Você nunca mais verá essa oferta.</h3>
+				<h2>Aproveite essa oportunidade antes que termine</h2>	
+			</div>				
+		</section>
+		<footer>
+			<footer>
+				<div class="rodape">
+				  <p>
+					<span class="copy">&copy; 2023 – Móveis Ácacia &reg;</span> Todos os Direitos Reservados. <br>
+					 Desenvolvido por <a href="#" id="desenvolvido" class="link-amarelo">Júnior Rocha</a>.
+				  </p>
+				</div>				
+			  </footer>
+			  
+		</footer>
+		
+	</div>
+
+<script src="script.js"></script>
+</body>
+</html>

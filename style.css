@@ -1,0 +1,286 @@
+/* Estilos gerais */
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+}
+/*#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999; /* defina um valor alto para garantir que a div esteja acima de todos os outros elementos na página 
+  } */
+  
+#page-title {
+    background: #ffffff;
+    padding: 1px;
+    text-align: center;
+    background-color: #FF0000;
+    width: 100%;   
+   
+}
+
+/* Estilos para o título secundário */
+h2 {
+    font-family: "Poppins", sans-serif;    
+    color: #ffffff;
+    font-size: 1.98vw;
+    text-align: center;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    line-height: 1.1;
+    font-weight: 700;
+}
+
+#titulo2 {
+    margin-top: 50px;
+    /* ou qualquer outro valor que funcione para o seu layout */
+}
+
+#titulo2 span {
+    color: #ffd400 !important;
+    /* Adicionado */
+}
+
+#mensagemFinal {
+
+    margin-top: 25;
+}
+
+
+h3 {
+    font-size: 2vw;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 2vh;
+    color: #ffd400;
+    line-height: 1.1;
+    font-weight: 400;
+}
+
+#mensagemFinal h3 {
+    margin-top: -40px; /* altere o valor de acordo com a quantidade que deseja mover para cima */
+  }
+  
+
+
+#secao_Upsell{
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    color: #ffffff;
+}
+
+#secao_Ol{
+    margin-bottom: 50px;
+}
+
+/* Estilos para a seção de vídeo */
+#secaoVideo {
+    text-align: center;
+    margin-top: 30px;
+    /* Adicionada uma margem superior de 40 pixels */
+}
+
+
+/* Estilos para a seção de texto */
+#section-2 {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+/* Estilos para o título da seção de texto */
+#section-2 h4 {
+    margin: 0;
+}
+
+/* Estilos para a imagem da seção de texto */
+#section-2 img {
+    display: block;
+    margin: 20px auto;
+}
+
+/* Estilos para a seção de componente JavaScript */
+#section-3 {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o contêiner da seção de componente JavaScript 
+#section-3-container {
+    display: inline-block;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}*/
+
+
+
+/* Estilos para a seção de upsell */
+
+#div_ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+}
+
+#div_ol li{
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.tituloDepoimento{
+  /*  display: flex;
+    width: 100%; 
+    justify-content: center;  
+    align-items: center;
+    flex-direction: column;
+    text-align: center;  */
+    background-color: #b572ff;    
+    position: relative; 
+    padding: 1px;  
+   
+  }
+  .videoDepoimento{
+
+    display: flex;    
+    background-color: #b572ff;  
+    justify-content: space-between; 
+    margin: 30px 20px 50px 20px;
+
+}
+
+/* Estilos para o container */
+#container {
+    position: relative;   
+    background-color: #6a00df;
+}
+
+#titulo2 h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+  
+}
+#titulo2 h1:not(:first-child) {
+    margin-top: -15px;
+}
+
+footer {
+    background-color: #333; /* altere a cor de fundo como desejar */
+    color: #fff; /* altere a cor do texto como desejar */
+    text-align: center; /* centraliza o texto dentro do rodapé */
+    padding: 20px 0; /* adiciona um espaço de 20px acima e abaixo do texto */
+  }
+  
+  .rodape {
+    max-width: 800px; /* define a largura máxima do rodapé */
+    margin: 0 auto; /* centraliza o rodapé horizontalmente */
+  }
+  
+  .copy {
+    font-weight: bold; /* deixa o texto em negrito */
+  }
+  
+  /* Cor padrão do link */
+a {
+    color: yellow;
+  }
+  
+  /* Cor do link quando hover */
+  a:hover {
+    color: white;
+  }
+  
+  /* Cor da classe link-amarelo */
+  .link-amarelo {
+    color: yellow;
+  }
+  
+  /* Cor da classe link-amarelo quando clicada */
+  .link-amarelo:active {
+    color: white;
+  }
+  
+/*botão clique aqui*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .blinking-button {
+    animation: blink 2s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 50px;
+    padding: 10px;
+    background-color: #df0a0a;
+    color: #ffffff;
+    font-size: 35px;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .faq-heading {
+    margin-bottom: 50px;
+  }
+
+  .deveComprar {
+     margin-top: 50px;  
+  }
+  
+   
+  details {
+    text-align: left;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+  
+  .containerPerguntas{
+    display: flex;
+    flex-direction: column;
+		 justify-content: center;
+	 	color:white;
+		 border: 0px solid rgb(121, 12, 103);	    
+      align-items: center;
+			
+  }
+  .tamanhoDivPerguntas p {
+    margin-left: 40px;
+    color: #c2baba; /* Substitua pela cor desejada que combine com o background roxo */
+    font-size: 18px; /* Substitua pelo tamanho de fonte desejado */
+}
+
+
+  .tamanhoDivPerguntas{
+    width: 50%;
+    
+    font-size: 22px;
+    margin-left: 130px;
+  }
+  
+
+  @keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+  

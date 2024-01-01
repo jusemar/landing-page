@@ -1,0 +1,42 @@
+.contagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b572ff;
+  }
+  
+  .numero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 10px 5px 5px;
+  }
+  
+  .numero {    
+    background-color:#ffd400;   
+    color: hsl(0, 82%, 4%);
+    text-shadow: 0 0 10px hsl(0, 0%, 100%);
+    font-size: 70px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+  
+  .legenda {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
+  }
+  
+  .dois-pontos {
+    font-size: 70px;
+    margin: 0px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  
+  

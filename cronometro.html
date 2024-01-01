@@ -1,0 +1,104 @@
+<style>
+  .contagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+
+  .numero-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+
+  .numero {
+    background-color: #efefef;
+    color: #000000;
+    font-size: 70px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+  }
+
+  .legenda {
+    font-size: 12px;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .dois-pontos {
+    font-size: 70px;
+    margin: 5px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+</style>
+
+<div class="contagem">
+  <div class="numero-container">
+    <div class="numero" id="dia"></div>
+    <p class="legenda">Dias</p>
+  </div>  
+  <div class="numero-container">
+    <div class="numero" id="hora"></div>
+    <p class="legenda">Horas</p>
+  </div>
+  <div class="dois-pontos">:</div>
+  <div class="numero-container">
+    <div class="numero" id="minuto"></div>
+    <p class="legenda">Minutos</p>
+  </div>  
+  <div class="dois-pontos">:</div>
+  <div class="numero-container">
+    <div class="numero" id="segundo"></div>
+    <p class="legenda">Segundos</p>
+  </div>
+</div>
+
+  <script>
+ // Define a data de finalização da contagem regressiva (formato MM/DD/YYYY)
+// Define a data de finalização da contagem regressiva (formato MM/DD/YYYY)
+const countdownDate = new Date("05/26/2023 00:00:00");
+
+// Atualiza a contagem regressiva a cada segundo
+const diaElement = document.getElementById("dia");
+const horaElement = document.getElementById("hora");
+const minutoElement = document.getElementById("minuto");
+const segundoElement = document.getElementById("segundo");
+
+const countdownInterval = setInterval(() => {
+  const now = new Date();
+  const distance = countdownDate - now;
+
+  // Verifica se a contagem regressiva chegou ao fim
+  if (distance <= 0) {
+    clearInterval(countdownInterval);
+    diaElement.innerHTML = '0';
+    horaElement.innerHTML = '0';
+    minutoElement.innerHTML = '0';
+    segundoElement.innerHTML = '0';
+    return;
+  }
+
+  // Calcula o tempo restante
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Atualiza os elementos HTML com os valores da contagem regressiva
+  diaElement.innerHTML = days.toString();
+  horaElement.innerHTML = hours.toString();
+  minutoElement.innerHTML = minutes.toString();
+  segundoElement.innerHTML = seconds.toString();
+}, 1000);
+
+
+
+  </script>
